@@ -1,0 +1,7 @@
+{
+  "name": "時間矩陣待辦事項",
+  "description": "一個React應用程式，提供時間矩陣四象限來管理待辦事項，並支援拖曳功能。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
