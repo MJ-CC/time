@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { TodoItem, QuadrantId, QuadrantDefinition } from './types';
 import Quadrant from './components/Quadrant';
@@ -163,7 +164,7 @@ const App: React.FC = () => {
     const draggedId = event.dataTransfer.getData('text/plain');
 
     // Exit if there's no ID or if dropping onto the same card
-    if (!draggedId || draggedId === dragOverCardId) {
+    if (!draggedId) { // Removed draggedId === dragOverCardId check here
       handleDragEnd();
       return;
     }
